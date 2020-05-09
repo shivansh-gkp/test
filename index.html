@@ -1,0 +1,58 @@
+<html>
+<head>
+  <link href="style.css" >
+</head>
+<body style =" background-color:00a1ab;">
+<div style="margin:auto; margin-top:15%; width:10%" >
+<form>
+<div>
+<label>Name:</label>
+<input type="text" id="name" placeholder="Name" required>
+</div>
+<div>
+<label>Email:</label>
+<input type="text" id="email" placeholder="Email" required>
+</div>
+<div>
+<label for="state">State:</label>
+<select id="state" onclick="check(state)">
+ <option value="1" onclick="check(state)">Uttar Pradesh</option>
+ <option value="2" onclick="check(state)">Rajasthan</option>
+ <option value="3" onclick="check(state)">Madhya Pradesh</option>
+ <option value="4" onclick="check(state)">West Bengal</option>
+</select>
+</div>
+<div id="1" style="display:none;">
+<label for="city">City:</label>
+<select id="city1" onclick="checkcity(city1)">
+ <option value="Gorakhpur" onclick="checkcity(city1)">Gorakhpur</option>
+ <option value="Kanpur" onclick="checkcity(city1)">Kanpur</option>
+</select>
+</div>
+<div id="2" style="display:none;">
+<label for="city">city:</label>
+<select id="city2" onclick="checkcity(city2)">
+ <option value="Alvar" onclick="checkcity(city2)">Alvar</option>
+ <option value="Jaipur" onclick="checkcity(city2)">Jaipur</option>
+</select>
+</div>
+<div id="3" style="display:none;">
+<label for="city">city:</label>
+<select id="city3" onclick="checkcity(city3)">
+ <option value="Raipur" onclick="checkcity(city3)">Raipur</option>
+ <option value="Riva" onclick="checkcity(city3)">Riva</option>
+</select>
+</div>
+<div id="4" style="display:none;">
+<label for="city">city:</label>
+<select id="city4" onclick="checkcity(city4)">
+ <option value="Kolkata" onclick="checkcity(city4)">Kolkata</option>
+ <option value="Darjeeling" onclick="checkcity(city4)">Darjeeling</option>
+</select>
+</div>
+</form>
+<script src="index.js"></script>
+<input type="submit" value="Submit" onclick="submit()">
+</div>
+</body>
+</html>
